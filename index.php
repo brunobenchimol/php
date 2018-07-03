@@ -1,12 +1,25 @@
+<?php
+if(isset($_POST['submit'])) 
+{ 
+    $name = $_POST['name'];
+    echo "User Has submitted the form and entered this name : <b> $name </b>";
+    echo "<br>You can use the following form again to enter a new name."; 
+}
+?>
+
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+   <input type="text" name="name"><br>
+   <input type="submit" name="submit" value="Submit Form"><br>
+</form>
+
+
 <?php 
           
-echo "Hello World - PHP\n";
-echo " --- Printing servers variables ---\n\n";
-          
+echo "Hello World - PHP <BR>";
+echo " --- Printing servers variables --- <BR><BR>";
+       
           
 $indicesServer = array('PHP_SELF', 
-'argv', 
-'argc', 
 'GATEWAY_INTERFACE', 
 'SERVER_ADDR', 
 'SERVER_NAME', 
@@ -15,7 +28,6 @@ $indicesServer = array('PHP_SELF',
 'REQUEST_METHOD', 
 'REQUEST_TIME', 
 'REQUEST_TIME_FLOAT', 
-'QUERY_STRING', 
 'DOCUMENT_ROOT', 
 'HTTP_ACCEPT', 
 'HTTP_ACCEPT_CHARSET', 
@@ -30,20 +42,10 @@ $indicesServer = array('PHP_SELF',
 'REMOTE_HOST', 
 'REMOTE_PORT', 
 'REMOTE_USER', 
-'REDIRECT_REMOTE_USER', 
 'SCRIPT_FILENAME', 
 'SERVER_ADMIN', 
 'SERVER_PORT', 
-'SERVER_SIGNATURE', 
-'PATH_TRANSLATED', 
-'SCRIPT_NAME', 
-'REQUEST_URI', 
-'PHP_AUTH_DIGEST', 
-'PHP_AUTH_USER', 
-'PHP_AUTH_PW', 
-'AUTH_TYPE', 
-'PATH_INFO', 
-'ORIG_PATH_INFO') ; 
+'SCRIPT_NAME' ) ; 
 echo '<table cellpadding="10">' ; 
 foreach ($indicesServer as $arg) { 
     if (isset($_SERVER[$arg])) { 
