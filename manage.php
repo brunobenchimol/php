@@ -1,4 +1,3 @@
-<html>
 
 <?php
 if(isset($_POST['submit'])) 
@@ -13,5 +12,3 @@ if(isset($_POST['submit']))
    <input type="text" name="name"><br>
    <input type="submit" name="submit" value="Submit Form"><br>
 </form>
-
-</html>
