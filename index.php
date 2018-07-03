@@ -1,7 +1,7 @@
 <?php 
           
-echo "Hello World - PHP";
-echo " --- Printing servers variables ---";
+echo "Hello World - PHP\n";
+echo " --- Printing servers variables ---\n\n";
           
           
 $indicesServer = array('PHP_SELF', 
