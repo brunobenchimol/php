@@ -1,5 +1,13 @@
 <?php 
+          
+echo "Hello World - PHP"
+echo " --- Printing servers variables ---"
+          
+          
 $indicesServer = array('PHP_SELF', 
+'argv', 
+'argc', 
+'GATEWAY_INTERFACE', 
 'SERVER_ADDR', 
 'SERVER_NAME', 
 'SERVER_SOFTWARE', 
