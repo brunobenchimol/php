@@ -6,12 +6,12 @@
 if(isset($_POST['ready'])) 
 { 
     echo "<p> <b> Probe de Ready Removido !!! </b> </p>"; 
-    unlink("ready.php");
+    unlink("/ready.php");
 }
 if(isset($_POST['liveness'])) 
 { 
     echo "<p> <b> Probe de Liveness Removido !!! </b> </p>"; 
-    unlink("liveness.php");
+    unlink("/liveness.php");
 }         
           
 ?>
