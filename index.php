@@ -1,14 +1,32 @@
-Links:
-
-<a href="/info.php">PHP INFO</a>
-<a href="/manage.php">Manage App</a>
-
-
-<?php 
+<p> Links: </p>
+<a href="/info.php">PHP INFO</a><BR>
           
-echo "Hello World - PHP <BR>";
-echo " --- Printing servers variables --- <BR><BR>";      
+
+<?php
+if(isset($_POST['ready'])) 
+{ 
+    echo "<p> <b> Probe de Ready Removido !!! </b> </p>"; 
+}
+if(isset($_POST['liveness'])) 
+{ 
+    echo "<p> <b> Probe de Liveness Removido !!! </b> </p>"; 
+}         
           
+?>
+
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+   <input type="submit" name="ready" value="Remover Probe - Ready"><br>
+</form>
+          
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+   <input type="submit" name="liveness" value="Remover Probe - Liveness"><br>
+</form>
+          
+
+<p> Hello World - PHP </p>
+<p> Printing servers variables </p>
+          
+<?php      
 $indicesServer = array('PHP_SELF', 
 'GATEWAY_INTERFACE', 
 'SERVER_ADDR', 
