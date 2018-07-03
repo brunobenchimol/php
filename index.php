@@ -1,7 +1,8 @@
 <p> Links: </p>
 <a href="/info.php">PHP INFO</a><BR>
           
-
+<p> Im running on <b> <?php echo gethostname(); ?> </b> system. </p>
+          
 <?php
 if(isset($_POST['ready'])) 
 { 
