@@ -1,9 +1,13 @@
+Links:
+
+<a href="/info.php">PHP INFO</a>
+<a href="/manage.php">Manage App</a>
+
 
 <?php 
           
 echo "Hello World - PHP <BR>";
-echo " --- Printing servers variables --- <BR><BR>";
-       
+echo " --- Printing servers variables --- <BR><BR>";      
           
 $indicesServer = array('PHP_SELF', 
 'GATEWAY_INTERFACE', 
