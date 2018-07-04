@@ -12,7 +12,7 @@ if(isset($_POST['ready']))
 if(isset($_POST['liveness'])) 
 { 
     echo "<p> <b> Probe de Liveness Removido !!! </b> </p>"; 
-    unlink("liveness.php");
+    unlink("alive.txt");
 }         
           
 ?>
