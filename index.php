@@ -1,6 +1,9 @@
 <p> Links: </p>
 <a href="/info.php">PHP INFO</a><BR>
           
+<a href="/scaleup.php">Click Here to Scale Up (Internal route to EZAB) -- takes 30s</a><BR>
+
+          
 <p> Im running on <b> <?php echo gethostname(); ?> </b> pod. </p>
 <p> Env $APP_CYCLE value is: <?php echo getenv("APP_CYCLE"); ?> </p>     
           
