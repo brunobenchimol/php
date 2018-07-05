@@ -5,7 +5,7 @@ $curl = curl_init();
 // Set some options - we are passing in a useragent too here
 curl_setopt_array($curl, array(
     CURLOPT_RETURNTRANSFER => 1,
-    CURLOPT_URL => 'http://ezab:8080/ezab.php?target=autoscale%2Findex.php&n=40000&c=200',
+    CURLOPT_URL => 'http://ezab:8080/ezab.php?target=autoscale%3A8080%2Findex.php&n=40000&c=200',
     CURLOPT_USERAGENT => 'Codular Sample cURL Request'
 ));
 // Send the request & save response to $resp
