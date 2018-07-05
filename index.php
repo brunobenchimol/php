@@ -1,7 +1,7 @@
 <p> Links: </p>
 <a href="/info.php">PHP INFO</a><BR>
           
-<p> Im running on <b> <?php echo gethostname(); ?> </b> system. </p>
+<p> Im running on <b> <?php echo gethostname(); ?> </b> pod. </p>
 <p> Env $APP_CYCLE value is: <?php echo getenv("APP_CYCLE"); ?> </p>     
           
 <?php
